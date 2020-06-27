@@ -4,7 +4,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:23204",
+      "applicationUrl": "https://bookscatalogueapi.azurewebsites.net",
       "sslPort": 44356
     }
   },
@@ -21,7 +21,7 @@
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/books",
-      "applicationUrl": "https://localhost:8000;http://localhost:8080",
+      "applicationUrl": "https://bookscatalogueapi.azurewebsites.net",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
