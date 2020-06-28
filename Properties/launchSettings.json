@@ -2,11 +2,7 @@
   "$schema": "http://json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false,
-    "anonymousAuthentication": true,
-    "iisExpress": {
-      "applicationUrl": "https://bookscatalogueapi.azurewebsites.net",
-      "sslPort": 44356
-    }
+    "anonymousAuthentication": true
   },
   "profiles": {
     "IIS Express": {
@@ -21,7 +17,6 @@
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/books",
-      "applicationUrl": "https://bookscatalogueapi.azurewebsites.net",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
