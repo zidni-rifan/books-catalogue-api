@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BooksCatalogueAPI.Data;
+using BooksCatalogueAPI.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -29,6 +30,7 @@ namespace BooksCatalogueAPI
         {
             services.AddControllers();
             services.AddDbContext<MyDatabaseContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MyDbConnection")));
+            services.Configure<AzureStorageConfig>(Configuration.GetSection("AzureStorageConfig"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
